@@ -22,13 +22,12 @@ public:
 
 	//public functions
 	int init(); //initiate scanners array
-	cResult* scan(char* FilePath); //returns cResult of one file
-	cResult** scan(char* FilePathQueue[]); // returns cResult pointer to an cResult array of files in FilePathQueue
+	cScanningResult* scan(cFile2scan file); //returns ScanningResult of one file
 };
 
 //scanner result
 
-class cResult
+class cScanningResult
 {
 public:
 	bool virus;

@@ -15,12 +15,17 @@ class cFileScanner
 
 };
 
-class FileParser
+class cFile2scan
 {
+	//Extract the needed information from the file so scanners can use this info
+public:
+	//constructors
+	cFile2scan();
+	//variables
+	char* path;
+	char* magic;
+	//... other info needed
 
 };
-
-
-
 
 #endif /* SCANNINGENGINE_H_ */
